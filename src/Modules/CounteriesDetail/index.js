@@ -7,21 +7,18 @@ import { gql } from "apollo-boost";
 export const CountriesDetail = props => {
   const [country, setCountry] = useState();
   const { code } = props.match.params;
+
   const { loading, error, data } = useQuery(gql`
 		{
 			country(code: "${code}") {
 				name
-				native
 				emoji
 				currency
 				phone
-				languages {
-					code
-					name
-				}
 			}
 		}
 		`);
+
   useEffect(() => {
     if (data && data.country) {
       setCountry(data.country);

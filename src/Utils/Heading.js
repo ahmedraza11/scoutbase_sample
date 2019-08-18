@@ -6,6 +6,6 @@ export const Heading1 = Styled.h1`
 `;
 
 export const Heading3 = Styled.h3`
-    font-weight: ${props=> props.bold && "400" || "100"};
+    font-weight: ${props => (props.bold && "400") || "100"};
     color: #0c0d5acf;
 `;
