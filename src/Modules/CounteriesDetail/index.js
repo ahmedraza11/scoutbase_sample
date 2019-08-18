@@ -39,8 +39,8 @@ export const CountriesDetail = props => {
               {country.name} {country.emoji}
             </Heading1>
             <hr />
-            <Heading3>Currency: {country.currency}</Heading3>
-            <Heading3>Area Code: {country.phone}</Heading3>
+            <Heading3 bold>Currency: {country.currency}</Heading3>
+            <Heading3 bold>Area Code: {country.phone}</Heading3>
           </>
         ) : (
           <Heading3>No Country Found:</Heading3>
