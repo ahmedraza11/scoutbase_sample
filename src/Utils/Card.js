@@ -1,8 +1,7 @@
-import React from 'react';
-import { Container } from './';
+import React from "react";
+import { Container } from "./";
 
-import Styled from 'styled-components';
-
+import Styled from "styled-components";
 
 const CardWrapper = Styled.div`
   width: auto;
@@ -14,14 +13,12 @@ const CardWrapper = Styled.div`
 	box-shadow: -1px 1px 20px -1px rgba(0,0,0,0.75);
 	-webkit-box-shadow: -1px 1px 20px -1px rgba(0,0,0,0.75);
 	-moz-box-shadow: -1px 1px 20px -1px rgba(0,0,0,0.75);	
-`
+`;
 
 export const Card = ({ children, bgColor }) => {
-	return (
-		<CardWrapper bgColor={bgColor}>
-			<Container>
-				{children}
-			</Container>
-		</CardWrapper>
-	)
-}
+  return (
+    <CardWrapper bgColor={bgColor}>
+      <Container>{children}</Container>
+    </CardWrapper>
+  );
+};

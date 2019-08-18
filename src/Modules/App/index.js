@@ -1,10 +1,15 @@
-import React from 'react';
-import { Countries, CountriesDetail, Dashboard, Navigation, NotFound } from '../';
+import React from "react";
+import {
+  Countries,
+  CountriesDetail,
+  Dashboard,
+  Navigation,
+  NotFound
+} from "../";
 
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import { ApolloProvider } from '@apollo/react-hooks';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { ApolloProvider } from "@apollo/react-hooks";
 import ApolloClient from "apollo-boost";
-
 
 const client = new ApolloClient({
   uri: "https://countries.trevorblades.com"
@@ -24,4 +29,4 @@ export const App = () => {
       </Router>
     </ApolloProvider>
   );
-}
+};

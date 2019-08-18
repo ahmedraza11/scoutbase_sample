@@ -1,19 +1,17 @@
-import React from 'react';
-import { Header } from '../../Utils';
-
+import React from "react";
+import { Header } from "../../Utils";
 
 const routes = [
-	{
-		name: 'Home',
-		link: '/'
-	}, {
-		name: 'Countries',
-		link: '/countries'
-	}
-]
+  {
+    name: "Home",
+    link: "/"
+  },
+  {
+    name: "Countries",
+    link: "/countries"
+  }
+];
 
 export const Navigation = () => {
-	return (
-		<Header routes={routes} />
-	)
-}
+  return <Header routes={routes} />;
+};

@@ -1,4 +1,4 @@
-import Styled from 'styled-components';
+import Styled from "styled-components";
 
 export const Table = Styled.table`
     th {
@@ -26,4 +26,4 @@ export const Table = Styled.table`
 		td a {
 			text-decoration: none;
 		}
-`
+`;

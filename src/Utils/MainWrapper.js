@@ -1,7 +1,6 @@
-import React from 'react';
+import React from "react";
 
-import Styled from 'styled-components';
-
+import Styled from "styled-components";
 
 const Wrapper = Styled.div`
   padding-right: 15px;
@@ -26,9 +25,5 @@ const Wrapper = Styled.div`
 `;
 
 export const Container = ({ children }) => {
-	return (
-		<Wrapper>
-			{children}
-		</Wrapper>
-	)
-}
+  return <Wrapper>{children}</Wrapper>;
+};

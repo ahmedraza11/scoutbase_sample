@@ -1,8 +1,7 @@
-import React from 'react';
+import React from "react";
 
-import Styled from 'styled-components';
-import { Link as RouteLink } from 'react-router-dom';
-
+import Styled from "styled-components";
+import { Link as RouteLink } from "react-router-dom";
 
 const Wrapper = Styled.div`
   width: 100%;
@@ -19,7 +18,7 @@ const Wrapper = Styled.div`
 const List = Styled.ul`
 	display: flex;
 	flex-direction: row;
-`
+`;
 
 const Item = Styled.li`
 	display:flex;
@@ -31,23 +30,21 @@ const Item = Styled.li`
 		color: #FFD54F;
 		cursor: pointer;
 	}
-`
+`;
 const Link = Styled(RouteLink)`
 	text-decoration: none;
-`
+`;
 
 export const Header = ({ routes }) => {
-	return (
-		<Wrapper>
-			<List>
-				{routes.map((val, i) => (
-					<Link key={i} to={val.link}>
-						<Item key={i}>
-							{val.name}
-						</Item>
-					</Link>
-				))}
-			</List>
-		</Wrapper>
-	)
-}
+  return (
+    <Wrapper>
+      <List>
+        {routes.map((val, i) => (
+          <Link key={i} to={val.link}>
+            <Item key={i}>{val.name}</Item>
+          </Link>
+        ))}
+      </List>
+    </Wrapper>
+  );
+};
